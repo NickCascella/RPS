@@ -17,9 +17,6 @@ if (computerSelection == 1) {
 } 
 
 
- let playerSelection = prompt("Please enter a choice of either Rock, Paper, or Scissors");
-
-
 //setting possible outcomes
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.length === computerSelection.length){
@@ -48,7 +45,20 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game(){
-    
+
+computerSelection = computerPlay();
+
+//setting random number to a choice
+if (computerSelection == 1) {
+     computerSelection = 'Rock';
+} else if (computerSelection == 2) {
+    computerSelection = "Paper"
+} else if (computerSelection == 3) {
+    computerSelection = "Scissors"
+} 
+
+    playerSelection = prompt("Please enter a choice of either Rock, Paper, or Scissors");
+
     playRound (playerSelection, computerSelection)
     console.log(humanScore)
     console.log(computerScore)
