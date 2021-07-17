@@ -1,10 +1,30 @@
 <html>
 <head>
-  <title>Page Title</title>
+  <link rel='stylesheet' href='rps.css'>
+  <title>RPS</title>
   <meta charset="UTF-8"/>
 </head>
 <body>
-  <script src="rps.js">
-  </script>
+
+  <div>
+      <h1 id='header'>Welcome to my first game! Rock, Paper, Scissors!</h1>
+  </div>
+
+  <div class='buttons'>
+    <button id='rock-selection'></button>
+    <button id='paper-selection'></button>
+    <button id='scissors-selection'></button> 
+  </div>
+
+  <div id='scores'>
+    <div id='scoreC'></div>
+    <div id='scoreH'></div>
+  </div>
+
+  <span id=comments></span>
+  
+  <div id='textDisplay'></div>
+
 </body>
+<script src="rps.js"></script>
 </html>
